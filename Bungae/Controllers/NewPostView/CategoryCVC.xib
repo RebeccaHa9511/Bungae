@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CategoryCVC" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCVC" id="Mi3-QO-OAu" customClass="CategoryCVC" customModule="Bungae" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mi3-QO-OAu" id="dbF-51-RY1">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카테고리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpc-By-a9q">
+                        <rect key="frame" x="20" y="18" width="62.5" height="22"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b81-RI-Qwh">
+                        <rect key="frame" x="369" y="16.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="UTB-uZ-dO3"/>
+                            <constraint firstAttribute="height" constant="25" id="YsM-1R-Vpv"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemGray3Color"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" backgroundImage="chevron.right" catalog="system"/>
+                        <buttonConfiguration key="configuration" style="plain" title="  " subtitle=" ">
+                            <backgroundConfiguration key="background" image="chevron.right" catalog="system" imageContentMode="scaleAspectFit"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hpc-By-a9q" firstAttribute="top" secondItem="dbF-51-RY1" secondAttribute="top" constant="18" id="2cW-TW-KSh"/>
+                    <constraint firstAttribute="trailing" secondItem="b81-RI-Qwh" secondAttribute="trailing" constant="20" id="C16-Xq-yQR"/>
+                    <constraint firstItem="b81-RI-Qwh" firstAttribute="centerY" secondItem="dbF-51-RY1" secondAttribute="centerY" id="iXh-g9-bxk"/>
+                    <constraint firstItem="hpc-By-a9q" firstAttribute="leading" secondItem="dbF-51-RY1" secondAttribute="leading" constant="20" id="wcu-vq-ech"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="categoryLbl" destination="hpc-By-a9q" id="bMH-UM-RKy"/>
+            </connections>
+            <point key="canvasLocation" x="150.72463768115944" y="106.47321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="U1g-MX-dCt">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="aXD-uf-vbf" customClass="TabBarController" customModule="Bungae" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xp2-fP-ykL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="clk-7X-4rI" kind="relationship" relationship="viewControllers" id="aSl-BX-DfV"/>
+                        <segue destination="Zk9-z8-ZPZ" kind="relationship" relationship="viewControllers" id="oOQ-h5-fml"/>
+                        <segue destination="sel-cj-Xoz" kind="relationship" relationship="viewControllers" id="fxT-0W-KOK"/>
+                        <segue destination="eM8-Lc-6xq" kind="relationship" relationship="viewControllers" id="8oS-Hw-Asp"/>
+                        <segue destination="nEU-Si-tlW" kind="relationship" relationship="viewControllers" id="XZR-oa-r7Q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXa-bw-JpH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="137"/>
+        </scene>
+        <!--test-->
+        <scene sceneID="ZGk-JQ-mby">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="test" id="ad0-u5-bhj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="YdD-8b-SVA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AK2-wp-Oks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616" y="376"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="Je3-aI-YJA">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="clk-7X-4rI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="dsc-mO-YxT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g3x-Tg-jZw">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="czv-BU-Bk9" kind="relationship" relationship="rootViewController" id="R2p-SL-Pjn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhv-lO-gWF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2096" y="872"/>
+        </scene>
+        <!--MainNavigationController-->
+        <scene sceneID="Az3-un-gjh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainHome" referencedIdentifier="MainNavigationController" id="czv-BU-Bk9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="w68-cu-3kl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3HU-fg-y4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2096" y="1430"/>
+        </scene>
+        <!--SearchVC-->
+        <scene sceneID="alz-wC-cCz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchView" referencedIdentifier="SearchVC" id="Zw2-qE-i9e" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3UH-09-G4g"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qym-Pb-8yf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1193" y="1434"/>
+        </scene>
+        <!--NewPostVC-->
+        <scene sceneID="MA6-tp-i9w">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewPost" referencedIdentifier="NewPostVC" id="UcW-QY-blS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Utg-CX-2Fp"/>
+                    <navigationItem key="navigationItem" id="7be-ix-Cdh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ESu-LS-Rwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="1434"/>
+        </scene>
+        <!--등록-->
+        <scene sceneID="aNl-eE-ZKB">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="sel-cj-Xoz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="등록" image="plus.circle" catalog="system" id="QlH-Fd-HqC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Thb-aq-7Bv">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UcW-QY-blS" kind="relationship" relationship="rootViewController" id="VlE-XI-r8r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dgq-XU-jWB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="883"/>
+        </scene>
+        <!--ChatVC-->
+        <scene sceneID="Xra-XU-F3P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChatView" referencedIdentifier="ChatVC" id="ygb-8J-2qP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ffH-YG-ju7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oeb-n5-e7g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="1434"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="cIV-9i-Trs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileView" referencedIdentifier="ProfileVC" id="fxf-k6-jP9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Olz-M8-le3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSd-Kp-aXp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541" y="1430"/>
+        </scene>
+        <!--검색-->
+        <scene sceneID="Zip-Ir-Mzk">
+            <objects>
+                <navigationController id="Zk9-z8-ZPZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass" catalog="system" id="C00-IR-3PI"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8MW-h3-cPU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Zw2-qE-i9e" kind="relationship" relationship="rootViewController" id="RkA-YG-avk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCG-c5-DsO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1193" y="872"/>
+        </scene>
+        <!--번개톡-->
+        <scene sceneID="3ZG-xc-Rnt">
+            <objects>
+                <navigationController id="eM8-Lc-6xq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="번개톡" image="bubble.right" catalog="system" id="BwD-Rb-FHD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vue-gk-exh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ygb-8J-2qP" kind="relationship" relationship="rootViewController" id="Uid-Pv-goO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJc-ti-6Oq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616" y="872"/>
+        </scene>
+        <!--MY-->
+        <scene sceneID="syZ-UM-3AI">
+            <objects>
+                <navigationController id="nEU-Si-tlW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="MY" image="person" catalog="system" id="gc8-cN-fUE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q3F-5u-Z7g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fxf-k6-jP9" kind="relationship" relationship="rootViewController" id="hzg-5f-uHo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pN8-Kj-yad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541" y="872"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bubble.right" catalog="system" width="128" height="110"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

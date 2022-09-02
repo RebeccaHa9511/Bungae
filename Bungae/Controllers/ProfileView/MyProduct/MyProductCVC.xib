@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MyProductCVC" reuseIdentifier="MyProductCVC" id="VAO-gU-pCm" customClass="MyProductCVC" customModule="Bungae" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="134" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Rx1-sy-gUi">
+                <rect key="frame" x="0.0" y="0.0" width="134" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1qv-YJ-lNm">
+                        <rect key="frame" x="0.0" y="0.0" width="134" height="165.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="1qv-YJ-lNm" secondAttribute="height" multiplier="94:116" id="mzZ-pf-IA3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="85,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMz-bN-Iiy">
+                        <rect key="frame" x="0.0" y="170.5" width="134" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="코스퀼티드" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mD-eN-bvQ">
+                        <rect key="frame" x="0.0" y="195" width="134" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sq0-7T-MUH" userLabel="heartBtn">
+                        <rect key="frame" x="109" y="5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="GxC-zo-DA1"/>
+                            <constraint firstAttribute="width" constant="20" id="mGn-aK-kFD"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain">
+                            <backgroundConfiguration key="background" image="heart" catalog="system" imageContentMode="scaleAspectFit"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1qv-YJ-lNm" firstAttribute="top" secondItem="Rx1-sy-gUi" secondAttribute="top" id="4Zu-Qd-e7X"/>
+                    <constraint firstItem="EMz-bN-Iiy" firstAttribute="top" secondItem="1qv-YJ-lNm" secondAttribute="bottom" constant="5" id="659-eM-z5H"/>
+                    <constraint firstItem="1qv-YJ-lNm" firstAttribute="leading" secondItem="Rx1-sy-gUi" secondAttribute="leading" id="7IG-Fr-NIl"/>
+                    <constraint firstItem="1qv-YJ-lNm" firstAttribute="width" secondItem="1qv-YJ-lNm" secondAttribute="height" multiplier="94:116" id="KbX-em-CPl"/>
+                    <constraint firstAttribute="trailing" secondItem="2mD-eN-bvQ" secondAttribute="trailing" id="Uhu-BV-K6r"/>
+                    <constraint firstItem="2mD-eN-bvQ" firstAttribute="leading" secondItem="Rx1-sy-gUi" secondAttribute="leading" id="Wbc-dA-ib0"/>
+                    <constraint firstAttribute="trailing" secondItem="1qv-YJ-lNm" secondAttribute="trailing" id="d3t-fg-aRJ"/>
+                    <constraint firstItem="EMz-bN-Iiy" firstAttribute="leading" secondItem="Rx1-sy-gUi" secondAttribute="leading" id="hzC-Mo-rF5"/>
+                    <constraint firstItem="Sq0-7T-MUH" firstAttribute="top" secondItem="Rx1-sy-gUi" secondAttribute="top" constant="5" id="khS-nq-Vtn"/>
+                    <constraint firstAttribute="trailing" secondItem="Sq0-7T-MUH" secondAttribute="trailing" constant="5" id="lBQ-TN-6nH"/>
+                    <constraint firstAttribute="trailing" secondItem="EMz-bN-Iiy" secondAttribute="trailing" id="lk4-aV-fcc"/>
+                    <constraint firstItem="2mD-eN-bvQ" firstAttribute="top" secondItem="EMz-bN-Iiy" secondAttribute="bottom" constant="5" id="xFw-Ia-2ce"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="134" height="250"/>
+            <connections>
+                <outlet property="myHeartButton" destination="Sq0-7T-MUH" id="8Df-9k-ENp"/>
+                <outlet property="myproductImg" destination="1qv-YJ-lNm" id="ItC-hB-UYd"/>
+                <outlet property="myproductPrice" destination="EMz-bN-Iiy" id="1Pa-28-OKM"/>
+                <outlet property="myproductTitle" destination="2mD-eN-bvQ" id="qrZ-cn-Ank"/>
+            </connections>
+            <point key="canvasLocation" x="74" y="143"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+    </resources>
+</document>
